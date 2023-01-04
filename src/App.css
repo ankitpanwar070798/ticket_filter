@@ -1,0 +1,177 @@
+.App {
+  width: 100vw;
+  height: 95vh;
+  background-color: #2a2d2f;
+  display: flex;
+}
+.left {
+  width: 25%;
+  background-color: black;
+  color: white;
+}
+.left h2 {
+  padding-left: 10px;
+  border-bottom: 1.5px solid white;
+  margin-top: 10;
+}
+.right {
+  width: 80%;
+}
+
+.data {
+  font-size: 20px;
+  padding: 20px;
+}
+.data:hover {
+  background-color: #2a2d2f;
+  color: #13938e;
+  font-weight: 500;
+}
+.active-tabs {
+  background-color: #2a2d2f;
+  color: #13938e;
+  font-weight: 500;
+}
+.allbutton {
+  display: flex;
+}
+.reset {
+  width: 50%;
+  height: 5vh;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+}
+.apply {
+  width: 50%;
+  height: 5vh;
+  background: linear-gradient(
+    90deg,
+    rgba(61, 161, 157, 1) 0%,
+    rgba(18, 98, 94, 1) 100%
+  );
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+}
+.content {
+  color: #949494;
+  display: none;
+}
+.content h2 {
+  padding-left: 10px;
+  border-bottom: 1.5px solid white;
+}
+.active-content {
+  display: block;
+}
+span {
+  color: red;
+}
+label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin: 40px 10px;
+}
+.startDate {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.endDate {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+.datelable {
+  margin-bottom: 20px;
+}
+input[type="date"] {
+  background: black;
+  color: white;
+  padding: 10px 35px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: none;
+  color-scheme: dark;
+  text-transform: uppercase;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 2em;
+  height: 2em;
+  border: 0.3em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+input[type="radio"]:focus {
+  outline: max(2px, 0.15em) solid white;
+  outline-offset: max(1px, 0.15em);
+  border: 0.4em solid #13938e;
+
+}
+h3{
+  color:red;
+}
+@media only screen and (max-width: 768px) {
+  .left {
+    width: 35%;
+    background-color: black;
+    color: white;
+  }
+  .data {
+    font-size: 16px;
+  }
+  .allbutton {
+    display: flex;
+  }
+  .reset {
+    width: 50%;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+  }
+  .apply {
+    width: 50%;
+    height: 5vh;
+    background: linear-gradient(
+      90deg,
+      rgba(61, 161, 157, 1) 0%,
+      rgba(18, 98, 94, 1) 100%
+    );
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+  }
+}
